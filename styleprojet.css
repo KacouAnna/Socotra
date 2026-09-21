@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.titles{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0;
+}
+.title{
+    margin: 0;
+    color: #1B1E1C;
+    font-family: Garamond, serif;
+}
+.boussole{
+    margin: 0;
+    color: #C85A3F;
+    font-family: "Instrument Sans", serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 32px 5vw;
+}
+.firstnav{
+    font-family: "Instrument Sans", serif;
+    color: #4E5350;
+}
+.firstnav .nav {
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.firstnav .nav-link{
+    color: #4E5350;
+}
+.btn{
+    border-radius: 0;
+    width: 137px;
+    background-color: transparent;
+    color:#1B1E1C ;
+    border: 1px solid #000;
+    padding: 4px 10px;
+}
+#column{
+    align-items: end;
+    margin: 80px 5vw 0;
+}
+#bigtitle{
+    font-family: Garamond, serif ;
+    margin: 0;
+    font-size: clamp(2.8rem, 6vw, 70px);
+    line-height: 1;
+    font-weight: 200 !important;
+}
+#littletext{
+    max-width: 360px;
+    margin-left: auto;
+    font-weight: 150;
+}
+#discover{
+    font-family: "Instrument Sans", serif;
+    color: #C85A3F;
+}
+
+@media (max-width: 768px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+        padding: 24px 6vw;
+    }
+
+    .firstnav,
+    .firstnav .nav {
+        width: 100%;
+    }
+
+    .firstnav .nav {
+        justify-content: flex-start !important;
+    }
+
+    header > div:last-child,
+    header .btn {
+        width: 100%;
+    }
+
+    #column {
+        margin: 48px 6vw 0;
+    }
+
+    #column > [class*="col-"] {
+        width: 100%;
+    }
+
+    #littletext {
+        margin: 32px 0 0;
+        max-width: none;
+    }
+}
+
