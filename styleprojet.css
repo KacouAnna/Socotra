@@ -14,6 +14,13 @@ img {
     height: auto;
 }
 
+.container .col img + p,
+.container .col img + figcaption,
+.row .col img + p,
+.row .col img + figcaption {
+    transform: translateY(5px);
+}
+
 .titles{
     display: flex;
     align-items: baseline;
@@ -24,6 +31,7 @@ img {
     margin: 0;
     color: #1B1E1C;
     font-family: Garamond, serif;
+    font-weight: 400;
 }
 .boussole{
     margin: 0;
@@ -112,4 +120,197 @@ header {
         max-width: none;
     }
 }
+.img2{
+    margin-top: 180px;
+}
 
+.img2 .row {
+    display: flex;
+    align-items: center;
+}
+
+.img2 .col-md-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.img2 .col-md-5 img {
+    width: min(100%, 520px);
+    height: auto;
+    display: block;
+}
+
+.img2 .figure-caption {
+    width: min(100%, 520px);
+    margin-top: 12px;
+    color: #8C928E;
+    font-family: "Instrument Sans", sans-serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.ban2 {
+    margin: 80px 5vw 0;
+}
+
+.ban2 .patrimoine-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    font-family: "Instrument Sans", serif;
+    font-size: 1rem;
+    color: #1B1E1C;
+}
+
+.ban2 .patrimoine-texte {
+    display: inline-block;
+    transform: translateY(24px);
+}
+
+.patrimoine-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    font-family: "Instrument Sans", serif;
+    font-size: 1rem;
+    color: #1B1E1C;
+}
+
+.patrimoine-num {
+    display: inline-block;
+    font-weight: 600;
+    color: #C85A3F;
+    font-family: "Instrument Sans", serif;
+}
+
+.petite-barre {
+    width: 150px;
+    border: none;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.patrimoine-texte {
+    white-space: nowrap;
+    font-family: "Instrument Sans", serif;
+    font-size: 18px;
+}
+
+.Unesco {
+    font-family: Garamond, serif;
+    color: #1B1E1C;
+    font-size: 48px;
+}
+
+.sanctuaire {
+    font-family: "Instrument Sans", serif;
+    color: #4E5350;
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+.first {
+    font-family: Garamond, serif;
+    color: #16373A;
+}
+
+.ban2 {
+    width: min(100%, 520px);
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+}
+
+#botanique {
+    font-family: Garamond, serif;
+    color: #1B1E1C;
+}
+
+#secontext {
+    font-family: "Instrument Sans", serif;
+    color: #4E5350;
+}
+
+.threeimages {
+    margin-top: 80px;
+}
+
+.threeimages .col > div {
+    transform: translateY(24px);
+}
+
+.rollone {
+    font-family: Garamond, serif;
+    color: #1B1E1C;
+}
+
+.rolltwo {
+    font-family: "Instrument Sans", serif;
+    color: #C85A3F;
+}
+
+.rollthree {
+    font-family: "Instrument Sans", serif;
+    color: #4E5350;
+}
+
+.bande1 {
+    width: 100%;
+    height: 1240px;
+    background-color: #16373A;
+    position: relative;
+    top: 220px;
+    padding: 80px 5vw 0;
+}
+
+.bande1 .thethree {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 32px 0;
+    font-family: "Instrument Sans", serif;
+    color: #C85A3F;
+    font-size: 1rem;
+}
+
+.thethree {
+    font-family: "Instrument Sans", serif;
+    color: #C85A3F;
+}
+
+.bande1 #column {
+    margin: 0;
+    align-items: end;
+}
+
+#inconnu {
+    font-family: Garamond, serif;
+    color: #FFFFFF;
+    margin: 0;
+    line-height: 1.1;
+}
+
+#threecontext {
+    font-family: "Instrument Sans", serif;
+    color: #FFFFFF;
+}
+
+.expe {
+    margin-right: 80px;
+}
+.img6{
+    margin-top: 110px;
+}
+.img8{
+    margin: 0;
+    display: block;
+    width: 500px;
+}
