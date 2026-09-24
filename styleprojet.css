@@ -204,6 +204,40 @@ header {
     font-size: 18px;
 }
 
+.desert .patrimoine-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: min(100%, 420px);
+    margin: 0 auto;
+    line-height: 1;
+}
+
+.desert .patrimoine-num,
+.desert .petite-barre {
+    display: inline-block;
+}
+
+.desert .patrimoine-num {
+    margin-right: 0;
+    flex-shrink: 0;
+}
+
+.desert .petite-barre {
+    width: 150px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.desert .patrimoine-texte2 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    transform: translateX(0);
+    text-align: left;
+}
+
 .Unesco {
     font-family: Garamond, serif;
     color: #1B1E1C;
@@ -309,8 +343,414 @@ header {
 .img6{
     margin-top: 110px;
 }
-.img8{
-    margin: 0;
+
+.img6 .row {
+    align-items: stretch;
+}
+
+.img6 .col-8,
+.img6 .col-4 {
+    display: flex;
+}
+
+.img6 .col-8 img,
+.img6 .col-4 img {
+    width: 100%;
+    height: clamp(260px, 28vw, 500px);
+    object-fit: cover;
     display: block;
-    width: 500px;
+}
+
+.img8 {
+    margin-top: -220px;
+    margin-bottom: -160px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.img8 .text-center {
+    width: min(100%, 1100px);
+}
+
+.img8 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.desert{
+    margin-top: 370px;
+}
+.desert.fig-caption{
+    font-family: "Instrument Sans", serif;
+    font-style: italic;
+}
+.tête{
+    font-family: "Instrument Sans", serif;
+    color: #C85A3F;
+}
+.cou{
+    color: #E5DEC9;
+}
+.pied{
+    font-family: "Instrument Sans", serif;
+    color: #8C928E;
+}
+.bien{
+    font-style: italic;
+    font-weight: 10px;
+}
+.fond{
+    font-family: Garamond, serif;
+    color: #1B1E1C;
+    margin-top: 20px;
+    font-size: 35px;
+}
+.block{
+    font-family: "Instrument Sans", serif;
+    color: #4E5350;
+    margin-top: 35px;
+}
+.line{
+    color:#E5DEC9
+}
+.premier{
+    text-decoration: bold;
+    font-family: "Instrument Sans", serif;
+    color: #1B1E1C;
+}
+.deuxieme{
+    font-family: "Instrument Sans", serif;
+    color: #8C928E;
+}
+.cink{
+    margin-top: 80px;
+}
+.cink h4{
+    font-size: 48px;
+    font-family: Garamond, serif;
+    color: #1B1E1C;
+}
+.one{
+    font-family: Garamond, serif;
+    color:#C85A3F;
+    font-size: 20px;
+}
+.two{
+    font-family: "Instrument Sans", serif;
+    font-size: 14px;
+    color: #4E5350;
+}
+.mycol{
+    margin-top: 30px;
+}
+.life{
+    color:#E5DEC9;
+    width: 100%;
+    margin-left: 0;
+}
+.b1{
+    color: #1B1E1C;
+    font-family: Garamond, serif;
+    font-size: 36px;
+    margin-top: 220px;
+}
+.b2{
+    font-size: 14px;
+    font-family: "Instrument Sans", serif;
+    margin-top: 245px;
+
+}
+.proud{
+    margin-top: 80px;
+}
+
+.proud .row {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+}
+
+.proud .row > .col,
+.proud .row > .col-md-auto,
+.proud .row > .col-lg-2 {
+    display: flex;
+    align-items: stretch;
+}
+
+.proud .row img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    flex: 1 1 auto;
+}
+
+.proud .row .col:nth-child(2) {
+    flex: 1.4 1 0;
+}
+
+.proud .row .col:nth-child(2) img {
+    width: 100%;
+    min-width: 0;
+}
+.goal{
+    margin-top: 250px;
+}
+.bande2{
+    width: 100vw;
+    max-width: 100vw;
+    min-height: 413px;
+    background-color: #0F3B43;
+    position: relative;
+    top: 220px;
+    padding: 80px 5vw 30px;
+    margin-left: calc(50% - 50vw);
+    color: #F3EEE8;
+}
+
+.bande2 .container {
+    max-width: none;
+    padding: 0;
+}
+
+.bande2 .container .row {
+    margin: 0;
+    row-gap: 2px;
+}
+
+.bande2 .row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 48px;
+    margin: 0;
+}
+
+.bande2 .row > .col {
+    flex: 1;
+    min-width: 0;
+}
+
+.bande2 .row > .col:nth-child(2),
+.bande2 .row > .col:nth-child(3) {
+    max-width: 230px;
+}
+
+.bande2 h3 {
+    margin: 0 0 18px;
+    font-family: Garamond, serif;
+    font-size: clamp(2.7rem, 4vw, 4.2rem);
+    line-height: 0.9;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #F3EEE8;
+}
+
+.bande2 p {
+    max-width: 540px;
+    margin: 0;
+    font-family: "Instrument Sans", serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #DCE8E2;
+}
+
+.bande2 .col-12 {
+    font-family: "Instrument Sans", serif;
+    font-size: 0.95rem;
+    color: #F3EEE8;
+    line-height: 1.1;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.bande2 .col-12.text-secondary {
+    color: #A8B8B6;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.bande2 .row > .col:nth-child(2),
+.bande2 .row > .col:nth-child(3) {
+    max-width: 210px;
+}
+
+.bande2 .live {
+    margin-top: 24px;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.live{
+    color: #e9e0c7;
+}
+
+@media (max-width: 991px) {
+    .img2 .row,
+    .threeimages .row,
+    .desert .row,
+    .proud .row,
+    .bande2 .row {
+        display: block;
+    }
+
+    .img2 .col-md-7,
+    .img2 .col-md-5,
+    .threeimages .col,
+    .desert .col,
+    .bande2 .col,
+    .proud .col,
+    .proud .col-md-auto,
+    .proud .col-lg-2 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .threeimages .col {
+        margin-bottom: 40px;
+    }
+
+    .bande1 {
+        height: auto;
+        top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .img6 .col-8,
+    .img6 .col-4,
+    .bande2 .row > .col:nth-child(2),
+    .bande2 .row > .col:nth-child(3) {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .bande2 {
+        top: 120px;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    .bande2 .row {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .desert {
+        margin-top: 220px;
+    }
+
+    .bric1,
+    .bric2 {
+        text-align: left !important;
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .firstnav,
+    .firstnav .nav {
+        width: 100%;
+    }
+
+    .firstnav .nav {
+        justify-content: flex-start !important;
+    }
+
+    header > div:last-child,
+    header .btn {
+        width: 100%;
+    }
+
+    #column {
+        margin: 48px 6vw 0;
+    }
+
+    #column > [class*="col-"] {
+        width: 100%;
+    }
+
+    #littletext {
+        margin: 32px 0 0;
+        max-width: none;
+    }
+
+    #bigtitle {
+        font-size: clamp(2.4rem, 12vw, 4rem);
+    }
+
+    .Unesco {
+        font-size: 2.2rem;
+    }
+
+    .ban2 {
+        width: 100%;
+        margin-top: 120px;
+    }
+
+    .img8 {
+        margin-top: -80px;
+        margin-bottom: 20px;
+    }
+
+    .proud .row img {
+        height: 200px;
+    }
+
+    .bande2 h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .boussole {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .bande2 {
+        padding-top: 40px;
+    }
+
+    .bande2 .col-12 {
+        margin-bottom: 10px;
+    }
+}
+
+.bric1 {
+    text-align: right !important;
+    margin-left: auto;
+    color: #8C928E;
+    font-family: "Instrument Sans", serif;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+}
+
+.bric2 {
+    text-align: left !important;
+    color: #8C928E;
+    font-family: "Instrument Sans", serif;
+    margin-top: 0;
+    font-size: 15px;
+    letter-spacing: 0.03em;
 }
